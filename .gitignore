@@ -3,3 +3,9 @@ pdfs/*.pdf
 site/*
 templates/graphics.scss
 .$*
+mkdocs.yml
+mkdocs-overview.yml
+mkdocs-users.yml
+mkdocs-administrators.yml
+mkdocs-developers.yml
+mkdocs-devops.yml
