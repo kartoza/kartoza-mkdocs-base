@@ -1,0 +1,214 @@
+site_name: SAWPS
+site_description: "SANBI WPS technical and user documentation."
+site_author: "Kartoza"
+docs_dir: ./src
+site_dir: ./site
+repo_name: "SANBI WPS"
+repo_url: "https://github.com/kartoza/sawps/"
+edit_uri: "https://github.com/kartoza/sawps/blob/main/docs/"
+
+copyright: Kartoza and Contributors
+
+markdown_extensions:
+        - attr_list # lets us resize images see https://github.com/mkdocs/mkdocs/issues/1678#issuecomment-455500757
+        - sane_lists # needed to keep numbers in ordered lists correct
+        - pymdownx.highlight:
+                  anchor_linenums: true
+        - pymdownx.inlinehilite
+        #- mdx_truly_sane_lists
+        - toc:
+                  permalink: true
+                   #slugify: !!python/name:pymdownx.slugs.slugify
+        - pymdownx.snippets:
+                  base_path: .
+        - admonition
+        - tables
+        - pymdownx.details
+        - pymdownx.caret
+        - pymdownx.keys
+        - pymdownx.mark
+        - pymdownx.tilde
+        - pymdownx.superfences:
+                  custom_fences:
+                          - name: mermaid
+                            class: mermaid
+                            format: !!python/name:pymdownx.superfences.fence_code_format
+        - pymdownx.emoji:
+                  emoji_generator: !!python/name:materialx.emoji.to_svg
+                  emoji_index: !!python/name:materialx.emoji.twemoji
+
+nav:
+        - Home:
+                  - Home: index.md
+                  - Code of Conduct: about/code-of-conduct.md
+                  - License: about/license.md
+        - User:
+                  - user/index.md
+                  - Quickstart: user/quickstart/index.md
+                  - Guide:
+                          - user/guide/index.md
+                          - Registering and Logging In: user/guide/registering.md
+                          - Help And Contact: user/guide/help.md
+                          - Setting Up the Profile: user/guide/profile-setup.md
+                          - Organisations: user/guide/organisations.md
+                          - Working with the Explore Page: user/guide/explore.md
+                          - Using the Data Upload Feature: user/guide/data-upload.md
+                  - Manual :
+                          - user/manual/index.md
+                          - Landing Page: user/manual/landing-page.md
+                          - Login and Logout:
+                                - user/manual/login-logout/index.md
+                                - Login: user/manual/login-logout/login-page.md
+                                - Forgot Password: user/manual/login-logout/forgot-password.md
+                                - Two Factor Authentication: user/manual/login-logout/login-2fa-page.md
+                                - Logout: user/manual/login-logout/logout.md
+                          - Register:
+                                - user/manual/register/index.md
+                                - Register: user/manual/register/register-page.md
+                                - Set up Two Factor Authentication: user/manual/register/setup-2fa.md
+                          - About Page: user/manual/about.md
+                          - Explore:
+                                - user/manual/explore/index.md
+                                - Layers: user/manual/explore/layers.md
+                                - Filters: user/manual/explore/filters.md
+                                - Map: user/manual/explore/map.md
+                                - Reports: user/manual/explore/reports.md
+                                - Charts: user/manual/explore/charts.md
+                                - Trends: user/manual/explore/trends.md
+                          - Upload Data: 
+                                - user/manual/data-upload/index.md
+                                - Data Upload Panel: user/manual/data-upload/panel.md
+                                - The Online Form: user/manual/data-upload/online-form.md
+                                - Template Upload: user/manual/data-upload/template-upload.md
+                          - Help and Contact: user/manual/help-contact.md
+                          - User Profile:
+                                - user/manual/user-profile/index.md
+                                - Profile Page: user/manual/user-profile/profile-page.md
+                                - Reminders: user/manual/user-profile/reminders.md
+                                - Notifications: user/manual/user-profile/notifications.md
+                                - Two Factor Authentication: user/manual/user-profile/2fa.md
+                                - Organisation Page: user/manual/user-profile/organisation-page.md
+                                - Request An Organisation: user/manual/user-profile/request-organisation.md
+                          - User Roles: user/manual/user-roles.md
+        - Administrators:
+                - administrator/index.md
+                - Guide:
+                        - administrator/guide/index.md
+                        - Accessing the Administration Site: administrator/guide/access-admin-site.md
+                        - Managing Organisations: administrator/guide/manage-organisations.md
+                        - Managing Users: administrator/guide/manage-users.md
+                        - Managing Taxa: administrator/guide/manage-taxa.md
+                        - Managing Uploaded Data: administrator/guide/manage-upload-data.md
+                        - Managing Lookup Tables: administrator/guide/manage-lookup-tables.md
+                - Manual:
+                        - administrator/manual/index.md
+                        - Django Administration: administrator/manual/django-admin.md
+                        - Django Tables: administrator/manual/django-table.md
+                        - Add Data in Django: administrator/manual/django-add-data.md
+                        - Edit Data in Django: administrator/manual/django-change-data.md
+        - Developer:
+                  - developer/index.md
+                  - Guide:
+                      - developer/guide/index.md
+                      - Architecture: developer/guide/architecture.md
+                      - Prerequisites: developer/guide/prerequisites.md
+                      - Design: developer/guide/design.md
+                      - IDE Setup: developer/guide/ide-setup.md
+                      - Cloning: developer/guide/cloning.md
+                      - Configuration: developer/guide/configuration.md
+                      - Building: developer/guide/building.md
+                      - Workflows: developer/guide/workflows.md
+                      - Testing: developer/guide/testing.md
+                      - "": developer/guide/templates/pull-request-template.md
+                      - "": developer/guide/templates/commit-message-convention.md
+                  - Manual:
+                      - developer/manual/index.md
+                      - Activity: developer/manual/activity.md
+                      - Core: developer/manual/core.md
+                      - Fixtures: developer/manual/fixtures.md
+                      - Frontend: developer/manual/frontend.md
+                      - Notification: developer/manual/notification.md
+                      - Occurrence: developer/manual/occurrence.md
+                      - Population Data: developer/manual/population_data.md
+                      - Property: developer/manual/property.md
+                      - Regulatory Permit: developer/manual/regulator_permit.md
+                      - SAWPS: developer/manual/sawps.md
+                      - Species: developer/manual/species.md
+                      - Stakeholder: developer/manual/stakeholder.md
+                  - API:
+                      - developer/api/index.md
+                      - Reference: developer/api/manual/index.md
+                      - Guide: developer/api/guide/index.md
+                  - Documentation Writing:
+                      - developer/documentation/index.md
+                      - Overview: developer/documentation/overview.md
+                      - Context Help: developer/documentation/context-help.md
+                  - License: about/license.md
+        - DevOps:
+                  - devops/index.md
+                  - Guide: devops/guide/index.md
+                  - Manual: devops/manual/index.md
+        - About:
+                  - About: about/index.md
+                  - License: about/license.md
+                  - Contributing: about/contributing.md
+# See mkdocs base and the create-mkdocs*
+# scripts for how this is used
+
+plugins:
+  - with-pdf:
+      # Full details on this plugin here:
+      # https://github.com/orzih/mkdocs-with-pdf
+      # And don't get it confused with https://github.com/zhaoterryy/mkdocs-pdf-export-plugin
+      # which is intended to export a single page at a time
+      author: Kartoza Pty (Ltd.)
+      # copyright will draw in page.bottom-right
+      # do it manually in templates/styles.scss
+      # for more control
+      # if you comment out here or use an empty string,
+      # the copyright text from mkdocs-base.yml will be
+      # used instead
+      copyright: " "
+      cover: true # see templates/cover.html
+      back_cover: true
+      cover_title: SANBI WPS documentation.
+      cover_logo: ./resources/img/logo/kartoza-logo.svg
+      # Print css is defined in templates/styles.scss
+      #custom_template_path: TEMPLATES PATH
+      #
+      toc_title: Contents
+      #heading_shift: false
+      toc_level: 2
+      # Set to 0 so that it does not generate chapter numbering
+      # we do the numbering in styles.css rather
+      ordered_chapter_level: 0
+      #excludes_children:
+      #    - 'release-notes/:upgrading'
+      #    - 'release-notes/:changelog'
+      #
+      #convert_iframe:
+      #    - src: IFRAME SRC
+      #      img: POSTER IMAGE URL
+      #      text: ALTERNATE TEXT
+      #    - src: ...
+      #two_columns_level: 3
+      #
+      #render_js: true
+      #headless_chrome_path: headless-chromium
+      #
+
+      #enabled_if_env: ENABLE_PDF_EXPORT
+      # See notes at the top of templates/styles.scss.templ
+      # for debugging workflow details.
+      #debug_html: true
+      #show_anchors: true
+
+      output_path: ../pdfs/2-SAWPSUsers.pdf
+      cover_subtitle: 'Part 1 - SANBI WPS User Documentation.'
+      exclude_pages:
+          - 'about/'
+          - 'administrator/'
+          - 'developer/'
+          - 'devops/'
+          #- 'user/'
+

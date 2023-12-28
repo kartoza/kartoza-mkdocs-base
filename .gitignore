@@ -1,0 +1,5 @@
+.venv
+pdfs/*.pdf
+site/*
+templates/graphics.scss
+.$*
