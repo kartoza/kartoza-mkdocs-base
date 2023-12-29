@@ -19,7 +19,6 @@ available features on the two pages.
 
 ## Help page overview
 
-![Help page](./img/help-contact-1.png)
 
 1. **The Help Button:** Locate the `HELP` button within the application's user
    interface, typically found in the navigation menu, this will redirect the user
@@ -45,8 +44,8 @@ available features on the two pages.
    you'll unlock the full potential of the site and discover efficient ways to
    achieve your goals.
 
-4. **Contact Us**: Connect with SANBI through the dedicated contact page by
-   clicking on the `Contact Us` button. SANBI welcomes user's inquiries and looks
+4. **Contact Us**: Connect with us through the dedicated contact page by
+   clicking on the `Contact Us` button. We welcome user inquiries and look
    forward to assisting users.
 
 ## Contact Page
@@ -60,8 +59,6 @@ and features available on the Contact Page.
 
 The Contact Page features a user-friendly contact form where users can provide
 their information and message. The key components of the contact form are:
-
-![Contact us](./img/help-contact-3.png)
 
 1. **Name**: Users are required to enter their name in this field.  It is where they should input their full name or a name by which they want to be addressed.
 

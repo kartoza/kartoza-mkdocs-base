@@ -17,7 +17,7 @@ Welcome to the PROJECT_NAME administrator guide. In this section of the
 documentation, we aim to show administrators common workflows for managing the
 platform effectively. Here is a brief overview of the content provided here:
 
-* **[Accessing the Administration Site:](./access-admin-site.md)** This section
+* **[Accessing the Administration Site:]()** This section
 contains a quick description on how administrators can access the
 administration site of the PROJECT_NAME platform.
 

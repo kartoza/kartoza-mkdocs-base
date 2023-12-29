@@ -1,3 +1,98 @@
+site_name: SET ME
+site_description: "Set me."
+site_author: "Kartoza"
+docs_dir: ./src
+site_dir: ./site
+repo_name: "Set Me"
+repo_url: "https://github.com/kartoza/setme/"
+edit_uri: "https://github.com/kartoza/setme/blob/main/docs/"
+
+copyright: Kartoza and Contributors
+
+markdown_extensions:
+        - attr_list # lets us resize images see https://github.com/mkdocs/mkdocs/issues/1678#issuecomment-455500757
+        - sane_lists # needed to keep numbers in ordered lists correct
+        - pymdownx.highlight:
+                  anchor_linenums: true
+        - pymdownx.inlinehilite
+        #- mdx_truly_sane_lists
+        - toc:
+                  permalink: true
+                   #slugify: !!python/name:pymdownx.slugs.slugify
+        - pymdownx.snippets:
+                  base_path: .
+        - admonition
+        - tables
+        - pymdownx.details
+        - pymdownx.caret
+        - pymdownx.keys
+        - pymdownx.mark
+        - pymdownx.tilde
+        - pymdownx.superfences:
+                  custom_fences:
+                          - name: mermaid
+                            class: mermaid
+                            format: !!python/name:pymdownx.superfences.fence_code_format
+        - pymdownx.emoji:
+                  emoji_generator: !!python/name:materialx.emoji.to_svg
+                  emoji_index: !!python/name:materialx.emoji.twemoji
+
+nav:
+        - Home:
+                  - Home: index.md
+                  - Code of Conduct: about/code-of-conduct.md
+                  - License: about/license.md
+        - User:
+                  - user/index.md
+                  - Quickstart: user/quickstart/index.md
+                  - Guide:
+                          - user/guide/index.md
+                          - Help And Contact: user/guide/help.md
+                  - Manual :
+                          - user/manual/index.md
+                          - "About": user/manual/about.md
+                          - "Help Contact": user/manual/about.md
+        - Administrators:
+                - administrator/index.md
+                - Guide:
+                        - administrator/guide/index.md
+                - Manual:
+                        - administrator/manual/index.md
+        - Developer:
+                  - developer/index.md
+                  - Guide:
+                      - developer/guide/index.md
+                      - Architecture: developer/guide/architecture.md
+                      - Prerequisites: developer/guide/prerequisites.md
+                      - Design: developer/guide/design.md
+                      - IDE Setup: developer/guide/ide-setup.md
+                      - Cloning: developer/guide/cloning.md
+                      - Configuration: developer/guide/configuration.md
+                      - Building: developer/guide/building.md
+                      - Workflows: developer/guide/workflows.md
+                      - Testing: developer/guide/testing.md
+                      - "": developer/guide/templates/pull-request-template.md
+                      - "": developer/guide/templates/commit-message-convention.md
+                  - Manual:
+                      - developer/manual/index.md
+                  - API:
+                      - developer/api/index.md
+                      - Reference: developer/api/manual/index.md
+                      - Guide: developer/api/guide/index.md
+                  - Documentation Writing:
+                      - developer/documentation/index.md
+                      - Easy Workflow: developer/documentation/easy-workflow.md
+                      - Overview: developer/documentation/overview.md
+                      - Context Help: developer/documentation/context-help.md
+                  - License: about/license.md
+        - DevOps:
+                  - devops/index.md
+                  - Guide: devops/guide/index.md
+                  - Manual: devops/manual/index.md
+        - About:
+                  - About: about/index.md
+                  - License: about/license.md
+                  - Contributing: about/contributing.md
 
 # Configuration
 theme:
@@ -66,17 +161,17 @@ extra_javascript:
 plugins:
   - search
   - macros
-  - mkdocstrings:
-      handlers:
-        python:
-          paths: [..]
-          import:
-            - https://docs.python.org/3/objects.inv
-            - https://mkdocstrings.github.io/autorefs/objects.inv
-          options:
-            docstring_style: sphinx
-            separate_signature: true
-            merge_init_into_class: true
-            docstring_options:
-              ignore_init_summary: true
+  #- mkdocstrings:
+  #    handlers:
+  #      python:
+  #        paths: [..]
+  #        import:
+  #          - https://docs.python.org/3/objects.inv
+  #          - https://mkdocstrings.github.io/autorefs/objects.inv
+  #        options:
+  #          docstring_style: sphinx
+  #          separate_signature: true
+  #          merge_init_into_class: true
+  #          docstring_options:
+  #            ignore_init_summary: true
 

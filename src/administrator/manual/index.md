@@ -19,4 +19,4 @@ documentation describes every administrator page in the application and what
 the various components of that page do. Here is a brief overview of the content
 provided here:
 
-* **[Administration:](./admin.md)** this section explains the administration of the site.
+* **[Administration:]()** this section explains the administration of the site.

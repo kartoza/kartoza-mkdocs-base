@@ -1,20 +1,25 @@
 ---
-title: IDS SAWPS
-summary: The SANBI Wildlife Protection System is a platform to track the population levels of endangered wildlife.
+title: Project Title
+summary: Project Summary
+    - Tim Sutton
     - Jeremy Prior
-date: 09-11-2023
-some_url: https://github.com/kartoza/sawps/
-copyright: Copyright 2023, SANBI
+date: 24-12-2023
+some_url: https://github.com/kartoza/.../
+copyright: Copyright 2023, Kartoza
 contact: PROJECT_CONTACT
 license: This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
-context_id: ToLKAEWjcAczw6kYEtYuJC
+context_id: VrfXH5X9kkzfJUTWe6TZKf
 ---
-
 # Developer Manual
 
-Welcome to the SAWPS developer manual. The manual is intended to function as a reference for the application. For narrative / workflow based tutorials, you may prefer to work through our [developer guide](../guide/index.md). Here is a brief overview of the content provided here:
+Welcome to the PROJECT_NAME developer manual. The manual is intended to
+function as a reference for the application. For narrative / workflow based
+tutorials, you may prefer to work through our [developer
+guide](../guide/index.md). Here is a brief overview of the content provided
+here:
 <!-- Need single sentence descriptions to be added to the list and the order might need to change -->
 
+<!-- 
 * **[Activity:](./activity.md)**
 * **[Core:](./core.md)**
 * **[Fixtures:](./fixtures.md)**
@@ -27,3 +32,5 @@ Welcome to the SAWPS developer manual. The manual is intended to function as a r
 * **[SAWPS](./sawps.md)**
 * **[Species](./species.md)**
 * **[Stakeholders:](./stakeholder.md)**
+-->
+
